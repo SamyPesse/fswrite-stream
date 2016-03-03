@@ -13,7 +13,6 @@ $ npm install fswrite-stream --save
 ```js
 var fsWriteStream = require('fswrite-stream');
 
-
 fsWriteStream('./test.html', request('http://google.fr'), function(err, size) {
     if (err) console.log(err);
     else console.log('Bytes written:', size);
