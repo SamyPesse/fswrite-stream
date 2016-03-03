@@ -1,6 +1,6 @@
 {
   "name": "fswrite-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Write a stream to a file",
   "main": "index.js",
   "scripts": {
