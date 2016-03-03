@@ -1,0 +1,25 @@
+{
+  "name": "fswrite-stream",
+  "version": "0.0.0",
+  "description": "Write a stream to a file",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --timeout 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamyPesse/fswrite-stream.git"
+  },
+  "author": "Samy Pesse <samypesse@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SamyPesse/fswrite-stream/issues"
+  },
+  "homepage": "https://github.com/SamyPesse/fswrite-stream#readme",
+  "dependencies": {
+    "length-stream": "^0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
