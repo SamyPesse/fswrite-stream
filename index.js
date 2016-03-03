@@ -25,6 +25,11 @@ function writeStream(filename, rstream, opts, callback) {
         callback(err);
     }
 
+    function onSuccess() {
+        cleanup();
+        callback(null, size);
+    }
+
     lstream.on('error', onError);
     wstream.on('error', onError);
     rstream.on('error', onError);
@@ -35,10 +40,7 @@ function writeStream(filename, rstream, opts, callback) {
         .pipe(wstream);
     });
 
-    wstream.on('finish', function() {
-        cleanup();
-        callback(null, size);
-    });
+    wstream.on('finish', onSuccess);
 }
 
 module.exports = writeStream;
